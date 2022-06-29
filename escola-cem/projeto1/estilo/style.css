@@ -17,7 +17,7 @@ a{
 }
 header {
     height: calc(100vh - 150px);
-    background: no-repeat center/cover url(../imagens/rjheader.jpg);
+    background: no-repeat center/cover url(../imagens/header.jpg);
     }
 
 header nav {
