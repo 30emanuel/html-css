@@ -18,7 +18,7 @@ a{
 header {
     height: calc(100vh - 150px);
     background: no-repeat center/cover url(../imagens/header.jpg);
-    }
+}
 
 header nav {
     display: flex;
@@ -57,21 +57,17 @@ button:hover{
 }
 .cidade{
     display: flex;
-    width: 100%;
     padding: 15px 0px;
 }
 .itemflex50{
     flex-basis: 50%;
+    width: 100%;
 }
 .cidadeimg{
     width: 100%;
     object-fit: cover;
     opacity: 90%;
     margin-top: 20px;
-}
-h2{
-    font-size: 25px;
-    font: bold;
 }
 .cidadetexto{
     height: 100%;
@@ -80,24 +76,28 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.cidadep{
-    padding: 5px 10px;
+.cidadetexto h2{
+    font-size: 25px;
+    font: bold;
+}
+.cidadetexto p{
+    padding: 0px 10px;
     text-align: justify;
     text-align-last: auto;
+}
+.servicostitulo{
+    text-align: center;
+    font-size: 1.5em;
 }
 .servicos{
     display: flex;
 }
-.itemflex33{
+.cards{
     flex-basis: 33%;
     text-align: center;
     border: 1px solid lightgray;
     border-radius: 5px;
     margin: 5px;
-}
-.servicostitulo{
-    text-align: center;
-    font-size: 1.5em;
 }
 @media (max-width: 750px){
     .cidade {
