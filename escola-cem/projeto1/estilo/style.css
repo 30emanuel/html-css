@@ -6,6 +6,7 @@
 }
 body {
     margin: 0;
+    background-color: rgba(223, 223, 223, 0.384);
 }
 
 ul{
@@ -16,7 +17,7 @@ a{
     text-decoration: none;
 }
 header {
-    height: calc(100vh - 150px);
+    height: 80vh;
     background: no-repeat center/cover url(../imagens/header.jpg);
 }
 
@@ -31,10 +32,20 @@ header nav p {
 }
 header nav ul {
     display: flex;
-}
-header nav ul li {
     margin: 0px 15px;
     color: black;
+}
+header nav ul li {
+    margin: 16px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    color: #45b5c4;
+    transition-duration: 0.5s;
 }
 button{
     border-radius: 8px;
@@ -83,7 +94,10 @@ button:hover{
 .cidadetexto p{
     padding: 0px 10px;
     text-align: justify;
-    text-align-last: auto;
+}
+section#servicos{
+    background-color: white;
+    padding: 10px;
 }
 .servicostitulo{
     text-align: center;
@@ -91,14 +105,28 @@ button:hover{
 }
 .servicos{
     display: flex;
+    margin: 10px;
 }
 .cards{
     flex-basis: 33%;
     text-align: center;
     border: 1px solid lightgray;
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px ;
 }
+.rodape-copyright{
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid lightblue;
+}
+.git{
+    text-decoration: underline;
+}
+.git:visited {
+    color: black;
+}
+
+
 @media (max-width: 750px){
     .cidade {
         margin-top: 5px;
