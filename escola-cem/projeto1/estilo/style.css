@@ -4,51 +4,43 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background-color: rgba(223, 223, 223, 0.384);
 }
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
 header {
     height: 80vh;
     background: no-repeat center/cover url(../imagens/header.jpg);
+    font-weight: bolder;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     margin: 0 30px;
-    color: black;
-}
-header nav p {
-    font-weight: bold;
+    color: #8844EE;
 }
 header nav ul {
     display: flex;
     margin: 0px 15px;
-    color: black;
-}
-header nav ul li {
-    margin: 16px 15px;
+    list-style: none;
 }
 nav ul li a{
+    display: flex;
+    margin: 16px 15px;
+    list-style: none;
     text-decoration: none;
-    color: black;
-    font-weight: bolder;
+    color: #8844EE;
 }
 nav ul li a:hover{
-    color: #45b5c4;
+    color: black;
     transition-duration: 0.5s;
 }
 button{
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 10px 15px;
     font-weight: bold;
     border: 10px;
@@ -57,7 +49,7 @@ button{
     transition-duration: 0.5s;
 }
 button:hover{
-    background-color: #45b5c4;
+    background-color: #8844EE;
     color: black;
 }
 .header-content{
@@ -65,6 +57,7 @@ button:hover{
     margin: 100px auto;
     text-align: center;
     color: white;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.61);
 }
 .cidade{
     display: flex;
@@ -76,9 +69,9 @@ button:hover{
 }
 .cidadeimg{
     width: 100%;
+    height: 100%;
     object-fit: cover;
     opacity: 90%;
-    margin-top: 20px;
 }
 .cidadetexto{
     height: 100%;
@@ -106,18 +99,68 @@ section#servicos{
 .servicos{
     display: flex;
     margin: 10px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 .cards{
     flex-basis: 33%;
+    flex: 1 1 100px;
     text-align: center;
-    border: 1px solid lightgray;
+    border: 1px solid #8844EE;
     border-radius: 5px;
-    margin: 5px ;
+    margin: 5px;
+}
+.contato{
+    text-align: center;
+    padding: 30px;
+}
+.redesociais{
+    padding-bottom: 5px;
+}
+.redesociais img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+}
+.redesociais img:hover{
+    border: 2px solid black;
+}
+.form{
+    background-color: #8844EE;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.contato h2{
+    font-size: 1.3em;
+}
+.form label,input,textarea,.botaoform{
+    display: block;
+    width: 100%;
+}
+.form label{
+    color: white;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.form input,textarea{
+    padding: 0.8em;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+.form textarea{
+    min-height: 10rem;
+    max-height: 15rem;
+    resize: vertical;
 }
 .rodape-copyright{
     text-align: center;
     padding: 15px;
-    border-top: 1px solid lightblue;
+    border-top: 1px solid #8844EE;
 }
 .git{
     text-decoration: underline;
@@ -127,20 +170,19 @@ section#servicos{
 }
 
 
-@media (max-width: 750px){
+
+@media (max-width: 770px){
     .cidade {
-        margin-top: 5px;
         flex-direction: column;
-    }
-    .servicos{
-        flex-direction: column;
-        padding: 5px;
     }
 }
 
 @media (max-width: 480px) {
     body {
         margin-bottom: 55px;
+    }
+    nav ul li a{
+        color: white;
     }
     header nav ul {
         position: fixed;
@@ -150,8 +192,8 @@ section#servicos{
         padding: 0;
         margin: 0;
         z-index: 99;
-        background: #047999d7;
-        color: white;
+        background-color: #8844EE;
+        color: black;
         font-weight: bold;
         height: 55px;
         display: flex;
@@ -161,5 +203,17 @@ section#servicos{
     header nav p {
         width: 100%;
         text-align: center;
+    }
+}
+@media (max-width: 370px){
+    header nav ul{
+        font-size: 60%;
+    }
+    .servicos{
+        display: inline-block;
+    }
+    .cards img{
+        width: 75%;
+        height: 75%;
     }
 }
