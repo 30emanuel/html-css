@@ -98,10 +98,10 @@ section#servicos{
 }
 .servicos{
     display: flex;
-    margin: 10px;
     flex-wrap: wrap;
     margin: 0 auto;
     padding-bottom: 20px;
+    justify-content: center;
 }
 .cards{
     flex-basis: 33%;
@@ -110,10 +110,13 @@ section#servicos{
     border: 1px solid #8844EE;
     border-radius: 5px;
     margin: 5px;
+    max-width: 500px;
+    justify-content: center;
 }
 .contato{
     text-align: center;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 .redesociais{
     padding-bottom: 5px;
@@ -128,14 +131,15 @@ section#servicos{
 .redesociais img:hover{
     border: 2px solid black;
 }
-.form{
-    background-color: #8844EE;
-    padding: 30px;
-    border-radius: 10px;
-    display: inline-block;
-}
 .contato h2{
     font-size: 1.3em;
+}
+.form{
+    background-color: #8844EE;
+    padding: 3px 20px 30px 20px;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
 }
 .form label,input,textarea,.botaoform{
     display: block;
